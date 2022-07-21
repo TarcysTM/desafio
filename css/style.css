@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    background-image: "pizzaria.jpg";    
+}
+:root{
+    --corFundo : rgb(22, 0, 83);
+    --corHover : rgb(0, 22, 216);
+    --corPrimaria : #fff;
+}
+
+body{
+    background: url("pizzaria.jpg") no-repeat;
+    background-size: cover;
+}
+.dropMenu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropMenu ul{
+    background-color: var(--corFundo);
+}
+
+.dropMenu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dropMenu ul li a{
+    color: var(--corPrimaria);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    transition: background .4s;
+}
+
+.dropMenu ul li a:hover{
+    background-color: var(--corHover);
+}
+
+/*sub menu*/
+.dropMenu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dropMenu ul li:hover ul{
+    display: block;
+}
+
+.dropMenu ul ul{
+    width: 150px;
+}
+
+.dropMenu ul ul li a{
+    display: block;
+}
+
+#tabela{
+    background-color: #FFF;
+}

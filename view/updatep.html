@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost/pizzaria-hi-tech2/css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <nav class="dropMenu">            
+            <ul id="menu">                
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Ingredientes</a>
+                    <ul>
+                        <li><a href="cadastro.html">Incluir</a></li>
+                        <li><a href="index.html">Exibir</a></li>   
+                    </ul>
+                </li>    
+                <li><a href="#">Pizzas</a>
+                    <ul>
+                        <li><a href="cadastrop.html">Incluir</a></li>
+                        <li><a href="indexp.html">Exibir</a></li> 
+                    </ul>
+                </li>
+                <li><a href="montar.html">Monte sua pizza</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container p-4">        
+        <div class="card header bg-secondary">
+            <p style="color:#fff">ATUALIZAR DADOS DAS PIZZAS</p>
+        </div>
+        <div class="card p-2">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input class="form-control" id="id" type="text" hidden/>
+                    <label for="" class="form-label">Nome</label>
+                    <input class="form-control" id="namep-1" type="text"/>
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">Ingredientes</label>
+                    <input class="form-control" id="ingredientesp-1" type="text"/>
+                </div>                
+                <div class="col-md-8">
+                    <input class="btn btn-primary" 
+                    id="btn" 
+                    type="submit" 
+                    value="Atualizar"
+                    onclick="updatePizza()"
+                    />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../scripts/indexp.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
